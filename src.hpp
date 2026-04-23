@@ -2,8 +2,9 @@
 
 #undef strtok
 
-char *strtok(char * __restrict str, const char * __restrict delim);
+namespace sjtu {
 
+char *strtok(char * __restrict str, const char * __restrict delim);
 
 char *strtok(char * __restrict str, const char * __restrict delim) {
     static char *saved_str = nullptr;
@@ -61,3 +62,5 @@ char *strtok(char * __restrict str, const char * __restrict delim) {
     // Reached end of string, return the last token
     return token_start;
 }
+
+} // namespace sjtu
