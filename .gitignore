@@ -1,0 +1,5 @@
+test
+test_input.txt
+*.o
+*.out
+main.cpp
